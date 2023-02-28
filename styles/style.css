@@ -13,7 +13,7 @@ body {
 nav {
   max-width: 100%;
   width: 100%;
-  height: 2em;
+  min-height: 2em;
   margin: 4em 20% auto 20% ;
   padding: 0;
   display: flex;
@@ -23,15 +23,17 @@ nav {
 }
 
 .logo {
-  width: 6em;
-  height: 23px;
-  font-family: 'Aldrich', sans-serif;
+  width: 70px;
+  height: 20px;
+  font-family: 'Baloo 2', cursive;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
   letter-spacing: -0.25px;
   text-align: left;
   color: #242635;
+  padding: 0;
+  margin: 0;
 }
 
 li {
@@ -46,7 +48,7 @@ a:link, a:visited, a:active {
 
 .list-container {
   width: 267px;
-  min-height: 23px;
+  min-height: 21px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -58,12 +60,6 @@ a:link, a:visited, a:active {
   letter-spacing: 0px;
   text-align: left;
   color: #242635;
-}
-
-.list-container-tablet {
-  visibility: hidden;
-  position: absolute;
-  right: 0;
 }
 
 .icon {
@@ -126,6 +122,7 @@ p {
     margin-top: 40px;
   }
 
+
   h1 {
     font-size: 72px;
     font-weight: 500;
@@ -133,17 +130,25 @@ p {
     letter-spacing: -1.600000023841858px;
   }
 
+  /*
   .list-container-desktop {
     visibility: hidden;
   }
 
   .list-container-tablet {
     visibility: visible;
-  }
+  }*/
 
   .img {
     background-image: url(/images/img-tablet.jpg);
   }
+}
+
+@media screen and (max-width: 768px) and (min-width: 321px) {
+  .list-container {
+    width: 200px;
+  }
+
 }
 
 @media screen and (max-width: 320px){
