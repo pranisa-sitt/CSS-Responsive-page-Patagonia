@@ -71,9 +71,11 @@ a:active {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 5px;
+  top: 22px;
   right: 0;
   visibility: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 main {
