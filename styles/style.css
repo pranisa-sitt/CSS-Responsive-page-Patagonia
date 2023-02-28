@@ -14,7 +14,7 @@ nav {
   max-width: 100%;
   width: 100%;
   min-height: 2em;
-  margin: 4em 20% auto 20% ;
+  margin: 4em 20% auto 20%;
   padding: 0;
   display: flex;
   justify-content: space-between;
@@ -40,7 +40,9 @@ li {
   list-style: none;
 }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
   text-decoration: none;
   color: #242635;
 
@@ -63,9 +65,13 @@ a:link, a:visited, a:active {
 }
 
 .icon {
+  font-family: 'Baloo 2', cursive;
+  font-size: 20px;
+  font-weight: 800;
   width: 24px;
   height: 24px;
   position: absolute;
+  top: 5px;
   right: 0;
   visibility: hidden;
 }
@@ -130,28 +136,39 @@ p {
     letter-spacing: -1.600000023841858px;
   }
 
-  /*
-  .list-container-desktop {
-    visibility: hidden;
-  }
-
-  .list-container-tablet {
-    visibility: visible;
-  }*/
-
   .img {
     background-image: url(/images/img-tablet.jpg);
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 321px) {
+@media screen and (max-width: 767px) and (min-width: 322px) {
   .list-container {
-    width: 200px;
+    width: 180px;
   }
 
+  nav {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  main {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
   main {
     width: 80%;
     margin: 0 auto;
@@ -163,7 +180,7 @@ p {
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
-    
+
   }
 
   .icon {
@@ -188,16 +205,13 @@ p {
     font-weight: 500;
     line-height: 40px;
     letter-spacing: -0.800000011920929px;
-    text-align: center;
   }
 
   p {
-    font-family: Source Sans Pro;
     font-size: 12px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0px;
-    text-align: center;
   }
 
   .img {
