@@ -120,9 +120,9 @@ p {
 @media screen and (max-width: 768px) {
   nav {
     max-width: 80%;
-    align-items: center; 
+    align-items: center;
   }
-  
+
   main {
     max-width: 80%;
   }
@@ -175,7 +175,7 @@ p {
   nav {
     max-width: 80%;
   }
-  
+
   main {
     width: 80%;
   }
